@@ -1,0 +1,130 @@
+/* Overall container styles */
+.home-container {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #f4f4f9;
+  }
+  
+  /* Make sure the row content is centered */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Styling for each category card */
+  .category-card {
+    position: relative;
+    height: 200px; /* Slightly larger height for each card */
+    width: 100%;
+    max-width: 280px; /* Increase max width for better visual balance */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Space between cards */
+    opacity: 0.9; /* Add slight opacity to cards */
+  }
+  
+  .category-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+  
+  /* Overlay on the category cards */
+  .category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for better contrast */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .category-card:hover .category-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+  }
+  
+  /* Card content styling */
+  .category-overlay h5 {
+    font-size: 1.5rem; /* Larger title font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .category-overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Stylish button */
+  .category-overlay .btn {
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px; /* More rounded edges for buttons */
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .category-overlay .btn:hover {
+    background-color: #ff3d00;
+    transform: scale(1.05); /* Slight button scale on hover */
+  }
+  
+  /* Styling for additional content and scrollable section */
+  .extra-content {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    margin-top: 30px;
+  }
+  
+  .extra-content p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  /* Make sure body and html allow scrolling */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Heading and paragraph styles */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  

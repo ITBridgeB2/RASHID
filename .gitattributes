@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.psd filter=lfs diff=lfs merge=lfs -text
+=======
+*.psd, filter=lfs diff=lfs merge=lfs -text
+etc. filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+\# filter=lfs diff=lfs merge=lfs -text
+or filter=lfs diff=lfs merge=lfs -text
+*.mp4, filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 4904ffc9caa518fdd2f9965329937d60d2db1fb2
